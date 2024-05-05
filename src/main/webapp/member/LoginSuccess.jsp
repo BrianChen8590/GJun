@@ -18,6 +18,7 @@ Member m = (Member) session.getAttribute("M");
 		<h1>
 			<%=m.getName()%>,登入成功
 		</h1>
+		<a href="../porder/porder.jsp">進入購物</a>
 
 	</div>
 	<div class="footer"><jsp:include page="../end.jsp" /></div>

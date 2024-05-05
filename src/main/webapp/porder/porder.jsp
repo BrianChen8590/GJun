@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,14 +8,16 @@
 <link href="../css/st1.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div class="header"></div>
-	<div class="navigater"></div>
-	<div class="content">
+<div class="header"></div>
+<div class="navigater"></div>
+<div class="content">
+	
+	<a href="addPorder.jsp">1)新增</a><br>
+	<a href="query.jsp">2)查詢</a><br>
+	<a href="">3)修改</a><br>
+	<a href="">4)刪除</a><br>
 
-		<a href="addPorder.jsp">1)新增</a><br> <a href="">2)查詢</a><br>
-		<a href="">3)修改</a><br> <a href="">4)刪除</a><br>
-
-	</div>
-	<div class="footer"></div>
+</div>
+<div class="footer"></div>
 </body>
 </html>

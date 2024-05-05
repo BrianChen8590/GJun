@@ -19,7 +19,7 @@
 		<table width=550 align=center border=0>
 			<tr>
 				<td colspan=3 align=center>
-				<h3><%=m.getName() %> , welcome , 請輸入</h3>
+				<h3><%=m.getName()%> , welcome , 請輸入</h3>
 			<tr>
 			<td colspan=2 align=center>
 			<hr>
@@ -50,7 +50,7 @@
 				</select>
 				<td>
 				B商品<br>
-				<img alt="2.jpg" src="../pic/2.JPG"><br>
+				<img alt="2.jpg" src="../pic/2.jpg"><br>
 				<select name="B">
 					<option value="0">0
 					<option value="1">1

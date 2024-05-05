@@ -1,4 +1,13 @@
+事前準備：
+1. Eclipse( Web )
+2. Tomcat 9.0
+3. Java 11 以上
+
+如何匯入專案：<a target="_blank" href="https://brianchen85.blogspot.com/2024/04/website-dynamic-web-project-eclipse.html" >如何匯入 Dynamic Web Project 至 Eclipse</a>
+
 練習連結: http://localhost:8080/GJun/
+<br>
+PS: 避免 Eclipse 存在 Gjun 專案，導致上方連結失效
 
 Database: MySql
 資料庫帳號密碼請記得更新
@@ -32,3 +41,10 @@ CREATE TABLE `porder` (
 CREATE  OR REPLACE VIEW `memberQuerySum` AS select * , A*150+B*120+C*100 as sum from gjun.porder;
 
 ```
+
+常遇問題：
+1. 沒辦法載入 CSS 檔案：
+關閉 Filter Content Type 的使用
+2. 
+3. 
+4. ？

@@ -27,4 +27,8 @@ CREATE TABLE `porder` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 
+
+-- 新增 Member Query Sum
+CREATE  OR REPLACE VIEW `memberQuerySum` AS select * , A*150+B*120+C*100 as sum from gjun.porder;
+
 ```

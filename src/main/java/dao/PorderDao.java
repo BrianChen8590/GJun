@@ -2,6 +2,7 @@ package dao;
 
 import java.util.List;
 
+import model.MemberQuerySum;
 import model.Porder;
 
 public interface PorderDao {
@@ -11,6 +12,9 @@ public interface PorderDao {
 	//read
 	List<Porder> selectAll();
 	Porder selectById(int id);
+	List<MemberQuerySum> selectBySum(int startSum,int endSum);
+	List<MemberQuerySum> queryAll();
+	
 	
 	//update
 	void update(Porder p);

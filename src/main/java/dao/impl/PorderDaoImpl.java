@@ -9,12 +9,18 @@ import java.util.List;
 
 import dao.DbConnection;
 import dao.PorderDao;
+import model.MemberQuerySum;
 import model.Porder;
 
 public class PorderDaoImpl implements PorderDao{
 
 	public static void main(String[] args) {
-		new PorderDaoImpl().deleteById(3);
+		List<MemberQuerySum> l=new PorderDaoImpl().queryAll();
+		
+		for(MemberQuerySum p:l)
+		{
+			System.out.println(p.getId()+"\t"+p.getMemberno()+"\t"+p.getSum());
+		}
 
 	}
 	private static final Connection conn=DbConnection.getDb();
@@ -124,6 +130,74 @@ public class PorderDaoImpl implements PorderDao{
 			e.printStackTrace();
 		}
 		
+	}
+
+	@Override
+	public List<MemberQuerySum> selectBySum(int startSum, int endSum) {
+		String SQL="SELECT * FROM memberquerysum where sum>=? and sum<=?";
+		List<MemberQuerySum> l=new ArrayList();		
+		try {
+			PreparedStatement ps=conn.prepareStatement(SQL);
+			ps.setInt(1, startSum);
+			ps.setInt(2, endSum);
+			
+			ResultSet rs=ps.executeQuery();
+			while(rs.next())
+			{
+				MemberQuerySum m=new MemberQuerySum();
+				m.setId(rs.getInt("id"));
+				m.setMemberno(rs.getString("memberno"));
+				m.setPorderno(rs.getString("porderno"));
+				m.setA(rs.getInt("A"));
+				m.setB(rs.getInt("B"));
+				m.setC(rs.getInt("C"));
+				m.setSum(rs.getInt("sum"));
+				
+				l.add(m);
+			}
+			
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		return l;
+	}
+
+	@Override
+	public List<MemberQuerySum> queryAll() {
+		String SQL="SELECT * FROM memberquerysum ";
+		List<MemberQuerySum> l=new ArrayList();		
+		try {
+			PreparedStatement ps=conn.prepareStatement(SQL);			
+			
+			ResultSet rs=ps.executeQuery();
+			while(rs.next())
+			{
+				MemberQuerySum m=new MemberQuerySum();
+				m.setId(rs.getInt("id"));
+				m.setMemberno(rs.getString("memberno"));
+				m.setPorderno(rs.getString("porderno"));
+				m.setA(rs.getInt("A"));
+				m.setB(rs.getInt("B"));
+				m.setC(rs.getInt("C"));
+				m.setSum(rs.getInt("sum"));
+				
+				l.add(m);
+			}
+			
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		return l;
 	}
 
 }

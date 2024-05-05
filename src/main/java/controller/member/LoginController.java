@@ -1,14 +1,16 @@
 package controller.member;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
-import model.Member;
 import dao.impl.MemberDaoImpl;
+import model.Member;
 
 
 @WebServlet("/LoginController")
@@ -29,6 +31,8 @@ public class LoginController extends HttpServlet {
 		Member m=new MemberDaoImpl().selectMember(Username, Password);
 		if(m!=null)
 		{
+			HttpSession session = request.getSession();
+			session.setAttribute("M", m);
 			response.sendRedirect("member/LoginSuccess.jsp");
 		}
 		else

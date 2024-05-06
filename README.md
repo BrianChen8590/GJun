@@ -6,18 +6,18 @@
 
 如何匯入專案：<a target="_blank" href="https://brianchen85.blogspot.com/2024/04/website-dynamic-web-project-eclipse.html" >如何匯入 Dynamic Web Project 至 Eclipse</a>
 
-How to import project at Eclipse?
-1. Click download icon then save your java workspace folder
-2. Open Eclipse and select above workspace path
-3. See blogger import project step by step (<a target="_blank" href="https://brianchen85.blogspot.com/2024/04/website-dynamic-web-project-eclipse.html" >How to import Dynamic Web Project at Eclipse</a>)
+How to import project at Eclipse?<br>
+1. Click download icon then save your java workspace folder<br>
+2. Open Eclipse and select above workspace path<br>
+3. See blogger import project step by step (<a target="_blank" href="https://brianchen85.blogspot.com/2024/04/website-dynamic-web-project-eclipse.html" >How to import Dynamic Web Project at Eclipse</a>)<br>
 
-練習連結: http://localhost:8080/GJun/
-PS: 
-GJun 是你的專案名稱，如果在 WorkSpace 有相同的名稱，網址將會被修改，請注意
-GJun is your project name, if have the same project in your workspace after url will be moidfy ap2.
+練習連結: http://localhost:8080/GJun/<br>
+PS: <br>
+GJun 是你的專案名稱，如果在 WorkSpace 有相同的名稱，網址將會被修改，請注意<br>
+GJun is your project name, if have the same project in your workspace after url will be modify ap2.<br>
 
 <br>
-PS: 避免 Eclipse 存在 Gjun 專案，導致上方連結失效
+PS: 避免 Eclipse 存在 Gjun 專案，導致上方連結失效<br>
 
 ```sql
 -- 新增 member Table

@@ -55,6 +55,8 @@ print(text)
 		<tr>
 			<td colspan=3 align=center>
 			<a href="porder.jsp">回訂單管理頁</a>
+			<a href="../LogoutController">登出</a>
+			
 			<DIV ALIGN="CENTER">
 <FORM>
 <INPUT NAME="print" TYPE="button" VALUE="列印此頁"

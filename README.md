@@ -49,6 +49,9 @@ CREATE  OR REPLACE VIEW `memberQuerySum` AS select * , A*150+B*120+C*100 as sum 
 
 ```
 
+PS: If you want to learn how to use listener, you can see java/com/listener/*.java and webapp/listener/*.jsp.
+Url: http://localhost:8080/GJun/listener/test1.jsp
+
 常遇問題：
 1. 沒辦法載入 CSS 檔案：
 關閉 Filter Content Type 的使用

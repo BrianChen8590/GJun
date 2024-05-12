@@ -29,4 +29,19 @@
   		<url-pattern>/porder/*</url-pattern>
   
   </filter-mapping>
+
+	<context-param>
+		<param-name>URL</param-name><!-- String URL -->
+		<param-value>jdbc:mysql://localhost:3306/gjcompany</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>X</param-name>
+		<param-value>100</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>Y</param-name>
+		<param-value>200</param-value>
+	</context-param>
 </web-app>

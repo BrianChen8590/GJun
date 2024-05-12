@@ -14,8 +14,8 @@
 	
 	<a href="addPorder.jsp">1)新增</a><br>
 	<a href="query.jsp">2)查詢</a><br>
-	<a href="">3)修改</a><br>
-	<a href="">4)刪除</a><br>
+	<a href="updatePorder.jsp">3)修改</a><br>
+	<a href="deletePorder.jsp">4)刪除</a><br>
 
 </div>
 <div class="footer"></div>
